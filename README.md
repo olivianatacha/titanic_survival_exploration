@@ -20,12 +20,7 @@ This section explains how to setup your system to run the codes found here.
 
 ### Running the project
 In order to be able to run the file _titanic_survival_exploration.ipynb_, you need to load a new kernel from the top right menu item on the browser tab that opened for jupyter. Click the Upload button and browse to the directory from which you extracted the file above to. Select titanic_survival_exploration.ipynb file and click open button to upload. Once uploaded to your jupyter notebook, click on the file name on the browser to open a new notebook for this project. Once you click, you should be able to see an interface with Graphs, Python codes, and questions with responses that were asked for this project. You can play around the codes following the instructions on the interfaces.
-# License(Choosealicense.com)
 
 # Contributing
-
-# Known bugs
-- From the notebook, the last prediction of 79.80% accuracy score does not meet the objective value of at least 80% for this project. The last code segment for question 4 does not carry the right conditions to meet this value.
-
-# Frequently asked questions
+- We believe too much is never enough, when you get the source files, at the end we conclude thude with further work that can be done. In addtion to this feel free to bring in new innvations for the model.
 
