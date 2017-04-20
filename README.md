@@ -1,26 +1,53 @@
-# Titanic survival exploration
+# Machine Learning Engineer Nanodegree
+## Introduction and Foundations
+## Project: Titanic Survival Exploration
 
-This jupyter notebook based python project explores features of passengers who boarded the Titanic ship in 1912 to determine which features of the passengers best predict passengers who survived or did not survive using machine learning, we implement several conditional statements.
-# Files
-- _titanic_survival_exploration.ipynb_
-- _titanic_data.csv_
-- _visuals.py_
-- _titanic_survival_exploration.html_
+### Install
 
-# Installation and Usage
+This project requires **Python 2.7** and the following Python libraries installed:
 
-This section explains how to setup your system to run the codes found here.
-## Setting up your Environment
-- Download Anaconda setup for your operating system from [here](https://www.continuum.io/downloads)
-- All installation instructions for Anaconda can be found [here](https://docs.continuum.io/anaconda/install), but fo specifics, if you are on windows, follow the instructions [here](https://docs.continuum.io/anaconda/install#anaconda-for-windows-install) to setup anaconda and on linux [here](https://docs.continuum.io/anaconda/install#linux-install) and for MAC OS from [here](https://docs.continuum.io/anaconda/install#anaconda-for-os-x-graphical-install)
+- [NumPy](http://www.numpy.org/)
+- [Pandas](http://pandas.pydata.org)
+- [matplotlib](http://matplotlib.org/)
+- [scikit-learn](http://scikit-learn.org/stable/)
 
-## Loading the notebook
-- If you have followed the instructions above, you should be able to run the jupyter notebook server from the terminal using $ jupyter-notebook and hit enter key. This will launch your web browser for the jupyter notebook from which you will load the file _titanic_survival_exploration.ipynb_
-- Click the clone button at the top of this repository and take download .zip which will download this repository to your local computer usually to the Downloads folder of your computer. You will need [Winrar](http://www.win-rar.com/predownload.html?&L=0) to unzip the files to a dirctory called titanic_survival_exploration/ on your local system.
+You will also need to have software installed to run and execute a [Jupyter Notebook](http://ipython.org/notebook.html)
 
-### Running the project
-In order to be able to run the file _titanic_survival_exploration.ipynb_, you need to load a new kernel from the top right menu item on the browser tab that opened for jupyter. Click the Upload button and browse to the directory from which you extracted the file above to. Select titanic_survival_exploration.ipynb file and click open button to upload. Once uploaded to your jupyter notebook, click on the file name on the browser to open a new notebook for this project. Once you click, you should be able to see an interface with Graphs, Python codes, and questions with responses that were asked for this project. You can play around the codes following the instructions on the interfaces.
+If you do not have Python installed yet, it is highly recommended that you install the [Anaconda](http://continuum.io/downloads) distribution of Python, which already has the above packages and more included. Make sure that you select the Python 2.7 installer and not the Python 3.x installer.
 
-# Contributing
-- We believe too much is never enough, when you get the source files, at the end we conclude thude with further work that can be done. In addtion to this feel free to bring in new innvations for the model.
+### Code
 
+Template code is provided in the notebook `titanic_survival_exploration.ipynb` notebook file. Additional supporting code can be found in `visuals.py`. While some code has already been implemented to get you started, you will need to implement additional functionality when requested to successfully complete the project. Note that the code included in `visuals.py` is meant to be used out-of-the-box and not intended for students to manipulate. If you are interested in how the visualizations are created in the notebook, please feel free to explore this Python file.
+
+### Run
+
+In a terminal or command window, navigate to the top-level project directory `titanic_survival_exploration/` (that contains this README) and run one of the following commands:
+
+```bash
+jupyter notebook titanic_survival_exploration.ipynb
+```
+or
+```bash
+ipython notebook titanic_survival_exploration.ipynb
+```
+
+This will open the Jupyter Notebook software and project file in your web browser.
+
+### Data
+
+The dataset used in this project is included as `titanic_data.csv`. This dataset is provided by Udacity and contains the following attributes:
+
+**Features**
+- `pclass` : Passenger Class (1 = 1st; 2 = 2nd; 3 = 3rd)
+- `name` : Name
+- `sex` : Sex
+- `age` : Age
+- `sibsp` : Number of Siblings/Spouses Aboard
+- `parch` : Number of Parents/Children Aboard
+- `ticket` : Ticket Number
+- `fare` : Passenger Fare
+- `cabin` : Cabin
+- `embarked` : Port of Embarkation (C = Cherbourg; Q = Queenstown; S = Southampton)
+
+**Target Variable**
+- `survival` : Survival (0 = No; 1 = Yes)

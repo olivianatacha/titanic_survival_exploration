@@ -5,9 +5,7 @@ import warnings
 warnings.filterwarnings("ignore", category = UserWarning, module = "matplotlib")
 #
 # Display inline matplotlib plots with IPython
-
 from IPython import get_ipython
-
 get_ipython().run_line_magic('matplotlib', 'inline')
 ###########################################
 
@@ -142,7 +140,7 @@ def survival_stats(data, outcomes, key, filters = []):
             surv_bar = plt.bar(i, frame.loc[i]['Survived'], width = bar_width, color = 'g')
 
             plt.xticks(np.arange(len(frame)), values)
-            plt.legend((nonsurv_bar[0], surv_bar[0]),('Did not survive', 'Survived'))#, framealpha = 0.8
+            plt.legend((nonsurv_bar[0], surv_bar[0]),('Did not survive', 'Survived'), framealpha = 0.8)
 
     # Common attributes for plot formatting
     plt.xlabel(key)
